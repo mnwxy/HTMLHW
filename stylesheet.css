@@ -1,0 +1,18 @@
+.clickable
+{
+  background: url(greybutton.png);
+  background-size: 100% 100%;
+}
+#page
+{
+  width: 100vw;
+  height: 100vh;
+}
+h1
+{
+  font-family: "Times New Roman", Times, serif;
+}
+.centered
+{
+    margin: auto;
+}
