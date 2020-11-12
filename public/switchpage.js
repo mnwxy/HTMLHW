@@ -1,23 +1,27 @@
 var pageNumber = 2;
 const NUM_PAGES = 2;
-function unloadContent()
-{
+
+function unloadContent() {
   $("#page").html("");
 }
 
-function loadContent(result)
-{
+function loadContent(result) {
   unloadContent();
   $("#page").html(result);
 }
-function changePage(input)
-{
+
+function changePage(input) {
   pageNumber = (pageNumber + parseInt(input.data.direction)) % NUM_PAGES;
   unloadContent();
-  $.ajax({url: "/public/page" + (pageNumber+parseInt(input.data.direction)) + ".html", success: loadContent});
+  $.ajax({
+    url: "/page" + (pageNumber + parseInt(input.data.direction)) + ".html",
+    success: loadContent
+  });
 }
 
-$("#rightArrow").click({direction: 1},changePage);
+$("#right_arrow").click({
+  direction: 1
+}, changePage);
 
 // document.getElementById("rightArrow")
 //   .addEventListener("click", function(event){
