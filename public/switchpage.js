@@ -22,14 +22,3 @@ function changePage(input) {
 $("#right_arrow").click({
   direction: 1
 }, changePage);
-
-// document.getElementById("rightArrow")
-//   .addEventListener("click", function(event){
-//     pageNumber = (pageNumber + 1) % NUM_PAGES;
-//     document.getElementById("page").setAttribute("src", "page" + (pageNumber+1) + ".html");
-//   });
-//   document.getElementById("leftArrow")
-//     .addEventListener("click", function(event){
-//       pageNumber = (pageNumber - 1) % NUM_PAGES;
-//       document.getElementById("page").setAttribute("src", "page" + (pageNumber+1) + ".html");
-//     });
