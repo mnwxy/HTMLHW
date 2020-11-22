@@ -1,5 +1,5 @@
 var pageNumber = 2;
-const NUM_PAGES = 2;
+const NUM_PAGES = 5;
 
 function unloadContent() {
   $("#page").html("");
