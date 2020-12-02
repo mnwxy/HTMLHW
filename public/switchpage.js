@@ -1,5 +1,5 @@
 var pageNumber = 2;
-const NUM_PAGES = 5;
+const NUM_PAGES = 3;
 
 function unloadContent() {
   $("#page").html("");
@@ -11,6 +11,7 @@ function loadContent(result) {
 }
 
 function changePage(input) {
+  alert("lol");
   pageNumber = (pageNumber + parseInt(input.data.direction)) % NUM_PAGES;
   unloadContent();
   $.ajax({
